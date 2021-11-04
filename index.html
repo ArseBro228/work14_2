@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson14_2</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <link rel="stylesheet" href="./fontawesome-free-5.15.4-web/css/all.min.css">
+</head>
+<body>
+    <div class="forma">
+        <h1>Форма регистрации</h1>
+        <form id="contact-form" action="">
+            <input type="hidden" name="contact_number">
+            <div class="info">
+                <div class="user_self">
+                    <i class="fas fa-user"></i>
+                </div>
+            <div class="user_text">
+                <h3>Что бы закончить, завершите регистрацию!</h3>
+                <i class="fas fa-arrow-right"></i>
+            </div>
+            </div>
+            <div class="info_box">
+                <div class="name">
+                    <input name="user_name" placeholder="Name" type="text">
+                </div>
+                <div class="email">
+                    <input name="user_email" placeholder="Email" type="email">
+                </div>
+                <div class="password">
+                    <input name="user_password" placeholder="********" type="password">
+                </div>
+                <div class="tel">
+                    <input name="user_phone" placeholder="Number" type="tel">
+                </div>
+                <div class="button">
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </div>
+            </div>
+        </form>
+    </div>
+<script src="./main.js"></script>
+</body>
+</html>
