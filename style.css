@@ -1,16 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
-i{
-    background-color: gray;
-}
+
 *{
-    box-sizing: border-box;
     margin: 0;
     font-family: 'Lato', sans-serif;
     padding: 0;
 }
 .forma{
     width: 100%;
-    height: 700px;
+    height: 100%;
+    padding-top: 20px;
 }
 h1{
     text-align: center;
@@ -21,8 +19,8 @@ h1{
 form{
     display: flex;
     border-radius: 20px;
-    width: 1000px;
-    height: 650px;
+    width: 70%;
+    height: 100%;
     margin: 70px auto;
     background-image: url(https://wallpaperaccess.com/full/3513670.jpg);
     opacity: 97%;
@@ -32,18 +30,24 @@ form{
 }
 .info{
     background-color: gainsboro;
-    width: 350px;
+    width: 35%;
     border-radius: 20px;
-    height: 500px;
+    height: auto;
     border: 3px solid black;
     box-shadow: 3px 3px 3px gray;
+    margin-top: 60px;
+    margin-bottom: 60px;
 }
 .user_self{
     margin-top: 5px;
     text-align: center;
+    width: 100%;
+    height: 150px;
 }
 .user_self i{
-    font-size: 210px;
+    background-color: gray;
+    font-size: 150px;
+    max-width: 100%;
     border-radius: 10px;
     box-shadow: 3px 3px 3px gray;
 }
@@ -53,37 +57,71 @@ form{
     margin-top: 30px;
 }
 .user_text i{
+    background-color: gray;
     font-size: 90px;
+    max-width: 100%;
     border-radius: 20px;
+    margin-bottom: 10px;
 }
 *::placeholder{
     text-align: center;
 }
 button{
-    margin-top: 10px;
-    margin-left: 8px;
-    width: 80px;
-    height: 30px;
+    margin-top: 3%;
+    margin-left: 4%;
+    margin-bottom: 4%;
+    width: 30%;
+    height: 25px;
+    border-radius: 10px;
 }
 .info_box{
+    padding-bottom: 10px;
+    padding-top: 20px;
     border-radius: 40px;
     background-color: gainsboro;
     border: 3px solid black;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 20px;
-    padding-right: 80px;
+    width: 25%;
     box-shadow: 3px 3px 3px gray;
 }
 input{
-    margin: 10px 0;
-    width: 240px;
-    height: 40px;
+    margin: 8px 0;
+    width: 70%;
+    height: 22px;
 }
 .info_box div{
-    width: 180px;
-    height: 50px;
+    text-align: center;
+    width: 100%;
+    height: 100%;
 }
 body{
+    background-repeat: no-repeat;
     background-image: url(https://www.teahub.io/photos/full/180-1802970_fantasy-anime-1920x1080-background.jpg);
+}
+button i{
+    font-size: 90%;
+}
+@media screen and (max-width: 968px) {
+    .forma h1{
+        font-size: 25px;
+    }
+    form{
+        display: block;
+        width: 400px;
+    }
+    .info{
+        width: 75%;
+        margin: 0px auto;
+    }
+    .user_self{
+        width: 200px;
+    }
+    .user_self i{
+        font-size: 150px;
+        margin: 0px 80px;
+    }
+    .info_box{
+        margin-top: 10px;
+        width: 75%;
+        margin-left: 48px;
+    }
 }
